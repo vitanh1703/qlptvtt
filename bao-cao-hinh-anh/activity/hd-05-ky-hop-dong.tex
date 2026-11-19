@@ -4,8 +4,8 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,shapes.geometric,calc}
 \tikzset{
-  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=blue!4,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
-  dec/.style={diamond,aspect=2,draw,thick,fill=yellow!8,align=center,font=\footnotesize,inner sep=0.5pt},
+  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=white,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
+  dec/.style={diamond,aspect=2,draw,thick,fill=white,align=center,font=\footnotesize,inner sep=0.5pt},
   mrg/.style={diamond,draw,thick,fill=white,minimum size=0.6cm,inner sep=0pt},
   st/.style={circle,fill=black,minimum size=0.42cm,inner sep=0pt},
   en/.style={circle,draw,thick,minimum size=0.5cm,inner sep=0pt,path picture={\fill[black] (path picture bounding box.center) circle (0.14);}},
@@ -29,7 +29,7 @@
 \node[act,text width=3.08cm] (ar) at (14.35,-6.12) {cancelLease: huỷ\\hợp đồng chưa ký};
 \node[act,text width=5.28cm] (b2) at (9.50,-10.80) {Smart contract kiểm tra đúng người thuê\\và đúng số tiền cọc + kỳ đầu};
 \node[dec,text width=1.21cm] (d1) at (9.50,-13.14) {Hợp lệ?};
-\node[act,text width=5.28cm] (b3) at (9.50,-15.48) {Giữ tiền cọc (escrow), chuyển kỳ đầu cho\\chủ nhà, hợp đồng “Đang thuê”};
+\node[act,text width=5.28cm] (b3) at (9.50,-15.48) {Giữ tiền cọc, chuyển kỳ đầu cho\\chủ nhà, hợp đồng “Đang thuê”};
 \node[act,text width=3.08cm] (ax) at (14.35,-15.48) {Hiển thị lý do\\bị từ chối};
 \node[act,text width=5.28cm] (b4) at (9.50,-17.82) {Backend đồng bộ sự kiện LeaseSigned:\\phòng chuyển “Đã thuê”};
 \node[mrg] (mf) at (11.50,-19.98) {};

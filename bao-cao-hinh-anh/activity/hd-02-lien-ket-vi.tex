@@ -4,8 +4,8 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,shapes.geometric,calc}
 \tikzset{
-  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=blue!4,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
-  dec/.style={diamond,aspect=2,draw,thick,fill=yellow!8,align=center,font=\footnotesize,inner sep=0.5pt},
+  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=white,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
+  dec/.style={diamond,aspect=2,draw,thick,fill=white,align=center,font=\footnotesize,inner sep=0.5pt},
   mrg/.style={diamond,draw,thick,fill=white,minimum size=0.6cm,inner sep=0pt},
   st/.style={circle,fill=black,minimum size=0.42cm,inner sep=0pt},
   en/.style={circle,draw,thick,minimum size=0.5cm,inner sep=0pt,path picture={\fill[black] (path picture bounding box.center) circle (0.14);}},
@@ -25,7 +25,7 @@
 \node[act,text width=4.40cm] (a1) at (3.20,-1.80) {Bấm “Kết nối ví”};
 \node[act,text width=5.28cm] (b1) at (9.50,-1.80) {Yêu cầu MetaMask cấp địa chỉ ví đang chọn};
 \node[act,text width=5.28cm] (b2) at (9.50,-3.96) {Tạo message liên kết gồm email, địa chỉ ví,\\nonce và thời gian};
-\node[act,text width=4.40cm] (a2) at (3.20,-6.12) {Ký message trên MetaMask\\(không tốn phí)};
+\node[act,text width=4.40cm] (a2) at (3.20,-6.12) {Ký message trên MetaMask};
 \node[act,text width=5.28cm] (b3) at (9.50,-8.28) {Khôi phục địa chỉ ví từ chữ ký};
 \node[dec,text width=2.31cm] (d1) at (9.50,-10.80) {Chữ ký khớp, ví chưa\\thuộc tài khoản khác?};
 \node[act,text width=5.28cm] (b4) at (9.50,-13.50) {Lưu địa chỉ ví vào tài khoản};

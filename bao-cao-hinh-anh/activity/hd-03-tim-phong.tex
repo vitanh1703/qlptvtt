@@ -4,8 +4,8 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,shapes.geometric,calc}
 \tikzset{
-  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=blue!4,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
-  dec/.style={diamond,aspect=2,draw,thick,fill=yellow!8,align=center,font=\footnotesize,inner sep=0.5pt},
+  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=white,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
+  dec/.style={diamond,aspect=2,draw,thick,fill=white,align=center,font=\footnotesize,inner sep=0.5pt},
   mrg/.style={diamond,draw,thick,fill=white,minimum size=0.6cm,inner sep=0pt},
   st/.style={circle,fill=black,minimum size=0.42cm,inner sep=0pt},
   en/.style={circle,draw,thick,minimum size=0.5cm,inner sep=0pt,path picture={\fill[black] (path picture bounding box.center) circle (0.14);}},
@@ -25,7 +25,7 @@
 \node[act,text width=4.40cm] (a1) at (3.20,-1.80) {Mở trang “Tìm phòng”};
 \node[act,text width=5.28cm] (b1) at (9.50,-3.60) {Lấy các phòng không có hợp đồng chờ ký\\hoặc đang thuê, kèm giá, cọc, thiết bị};
 \node[act,text width=4.40cm] (a2) at (3.20,-5.76) {Lọc theo giá / từ khoá,\\chọn phòng phù hợp};
-\node[act,text width=4.84cm] (a3) at (3.20,-7.92) {Nhập lời nhắn (lịch xem phòng,\\số người ở), bấm “Gửi yêu cầu thuê”};
+\node[act,text width=4.84cm] (a3) at (3.20,-7.92) {Nhập lời nhắn, bấm “Gửi yêu cầu thuê”};
 \node[dec,text width=1.43cm] (d1) at (9.50,-10.26) {Yêu cầu\\hợp lệ?};
 \node[act,text width=5.28cm] (b2) at (9.50,-12.78) {Lưu yêu cầu thuê trạng thái “Chờ chủ nhà\\phản hồi”, hiện ở trang Phòng của chủ nhà};
 \node[act,text width=3.08cm] (ax) at (14.35,-12.78) {Hiển thị\\thông báo lỗi};

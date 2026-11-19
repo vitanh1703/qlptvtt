@@ -4,8 +4,8 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,shapes.geometric,calc}
 \tikzset{
-  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=blue!4,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
-  dec/.style={diamond,aspect=2,draw,thick,fill=yellow!8,align=center,font=\footnotesize,inner sep=0.5pt},
+  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=white,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
+  dec/.style={diamond,aspect=2,draw,thick,fill=white,align=center,font=\footnotesize,inner sep=0.5pt},
   mrg/.style={diamond,draw,thick,fill=white,minimum size=0.6cm,inner sep=0pt},
   st/.style={circle,fill=black,minimum size=0.42cm,inner sep=0pt},
   en/.style={circle,draw,thick,minimum size=0.5cm,inner sep=0pt,path picture={\fill[black] (path picture bounding box.center) circle (0.14);}},
@@ -25,14 +25,14 @@
 \draw[thick] (10.4,1.7000000000000002) -- (10.4,-23.76);
 \node[st] (s) at (2.60,0.00) {};
 \node[act,text width=3.96cm] (a1) at (2.60,-1.80) {Bấm “Xuất” hoá đơn,\\xác nhận trên MetaMask};
-\node[act,text width=5.28cm] (b1) at (13.50,-3.78) {Smart contract issueBill(kỳ tiền phòng,\\tiền dịch vụ) — phát BillIssued};
+\node[act,text width=5.28cm] (b1) at (13.50,-3.78) {Smart contract issueBill, phát BillIssued};
 \node[act,text width=5.28cm] (b2) at (13.50,-6.30) {Backend kiểm tra hoá đơn trên chain khớp\\số tiền, gắn mã; trạng thái “Chờ thanh toán”};
 \node[act,text width=3.96cm] (t1) at (7.80,-9.00) {Mở “Hoá đơn của tôi”, xem\\chi tiết, bấm “Thanh toán”};
 \node[act,text width=5.28cm] (b3) at (13.50,-11.34) {Smart contract kiểm tra đúng người thuê,\\đúng số tiền, chưa trả, chưa huỷ};
 \node[dec,text width=1.21cm] (d1) at (13.50,-13.68) {Hợp lệ?};
 \node[act,text width=5.28cm] (b4) at (13.50,-16.02) {Cộng tiền vào số dư chủ nhà, cộng kỳ tiền\\phòng vào hợp đồng, phát BillPaid};
 \node[act,text width=3.08cm] (ax) at (18.35,-16.02) {Hiển thị lý do\\bị từ chối};
-\node[act,text width=5.28cm] (b5) at (13.50,-18.72) {Backend ghi PHIEUTHANHTOAN (Blockchain),\\hoá đơn “Đã thu đủ”, cập nhật doanh thu};
+\node[act,text width=5.28cm] (b5) at (13.50,-18.72) {Backend ghi PHIEUTHANHTOAN,\\hoá đơn “Đã thu đủ”, cập nhật doanh thu};
 \node[mrg] (mf) at (15.50,-21.06) {};
 \node[en] (e) at (15.50,-22.68) {};
 \draw[arr] (s) -- (a1);

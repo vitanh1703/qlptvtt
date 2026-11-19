@@ -4,8 +4,8 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,shapes.geometric,calc}
 \tikzset{
-  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=blue!4,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
-  dec/.style={diamond,aspect=2,draw,thick,fill=yellow!8,align=center,font=\footnotesize,inner sep=0.5pt},
+  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=white,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
+  dec/.style={diamond,aspect=2,draw,thick,fill=white,align=center,font=\footnotesize,inner sep=0.5pt},
   mrg/.style={diamond,draw,thick,fill=white,minimum size=0.6cm,inner sep=0pt},
   st/.style={circle,fill=black,minimum size=0.42cm,inner sep=0pt},
   en/.style={circle,draw,thick,minimum size=0.5cm,inner sep=0pt,path picture={\fill[black] (path picture bounding box.center) circle (0.14);}},
@@ -27,11 +27,11 @@
 \node[act,text width=4.84cm] (a2) at (3.20,-5.76) {Nhập chỉ số mới điện, nước};
 \node[dec,text width=1.43cm] (d1) at (9.50,-7.92) {Mới ≥ cũ?};
 \node[act,text width=3.08cm] (ax) at (14.35,-7.92) {Tô đỏ ô tiêu thụ,\\khoá nút Lưu};
-\node[act,text width=5.28cm] (b2) at (9.50,-10.26) {Lưu SUDUNGDV (chỉ số cũ, mới)};
-\node[act,text width=4.84cm] (a3) at (3.20,-12.42) {Bấm “Tạo hoá đơn tháng”\\(hoặc hệ thống tự tạo đầu tháng)};
+\node[act,text width=5.28cm] (b2) at (9.50,-10.26) {Lưu chỉ số điện nước vào SUDUNGDV};
+\node[act,text width=4.84cm] (a3) at (3.20,-12.42) {Bấm “Tạo hoá đơn tháng”};
 \node[act,text width=5.28cm] (b3) at (9.50,-14.58) {Với mỗi phòng đang thuê đủ chỉ số: tính tiền\\điện, nước theo chỉ số × đơn giá};
-\node[act,text width=5.28cm] (b4) at (9.50,-16.92) {Cộng dịch vụ cố định (internet, rác, gửi xe)\\và 1 kỳ tiền phòng nếu hợp đồng còn kỳ};
-\node[act,text width=5.28cm] (b5) at (9.50,-19.26) {Lưu HOADON “Chưa phát hành”, báo các\\phòng bị bỏ qua (thiếu chỉ số…)};
+\node[act,text width=5.28cm] (b4) at (9.50,-16.92) {Cộng dịch vụ cố định\\và 1 kỳ tiền phòng nếu hợp đồng còn kỳ};
+\node[act,text width=5.28cm] (b5) at (9.50,-19.26) {Lưu HOADON “Chưa phát hành”, báo các\\phòng bị bỏ qua};
 \node[mrg] (mf) at (11.50,-21.42) {};
 \node[en] (e) at (11.50,-23.04) {};
 \draw[arr] (s) -- (a1);

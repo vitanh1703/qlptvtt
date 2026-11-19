@@ -4,8 +4,8 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,shapes.geometric,calc}
 \tikzset{
-  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=blue!4,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
-  dec/.style={diamond,aspect=2,draw,thick,fill=yellow!8,align=center,font=\footnotesize,inner sep=0.5pt},
+  act/.style={rectangle,rounded corners=6pt,draw,thick,fill=white,align=center,font=\small,minimum height=0.8cm,inner sep=3pt},
+  dec/.style={diamond,aspect=2,draw,thick,fill=white,align=center,font=\footnotesize,inner sep=0.5pt},
   mrg/.style={diamond,draw,thick,fill=white,minimum size=0.6cm,inner sep=0pt},
   st/.style={circle,fill=black,minimum size=0.42cm,inner sep=0pt},
   en/.style={circle,draw,thick,minimum size=0.5cm,inner sep=0pt,path picture={\fill[black] (path picture bounding box.center) circle (0.14);}},
@@ -26,7 +26,7 @@
 \node[st] (s) at (2.60,0.00) {};
 \node[act,text width=3.96cm] (a1) at (2.60,-1.80) {Nhập số kỳ gia hạn, bấm\\“Đề xuất gia hạn”};
 \node[act,text width=5.28cm] (b1) at (13.50,-3.78) {Smart contract kiểm tra hợp đồng đang thuê,\\chưa hết hạn, tổng số kỳ ≤ 240};
-\node[act,text width=5.28cm] (b2) at (13.50,-6.12) {Lưu đề xuất (số kỳ, bên đề xuất),\\phát ExtensionProposed};
+\node[act,text width=5.28cm] (b2) at (13.50,-6.12) {Lưu đề xuất gia hạn,\\phát ExtensionProposed};
 \node[dec,text width=1.21cm] (d0) at (7.80,-8.64) {Đồng ý?};
 \node[act,text width=5.28cm] (b3) at (13.50,-8.64) {acceptExtension: cộng số kỳ, kéo dài\\ngày hết hạn, phát LeaseExtended};
 \node[act,text width=3.08cm] (b4) at (18.35,-11.52) {cancelExtension:\\xoá đề xuất};

@@ -1,0 +1,48 @@
+\documentclass[11pt,border=8pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes.geometric}
+\tikzset{
+  uc/.style={ellipse,draw,thick,fill=white,align=center,font=\small,minimum width=4.6cm,minimum height=1.2cm,inner sep=1pt},
+  arr/.style={thick,-{Stealth[length=2.6mm]}},
+  actor/.pic={   % gốc ở bàn chân; tay ở độ cao 1.0
+    \draw[thick,fill=white] (0,1.45) circle (0.25);
+    \draw[thick] (0,1.2) -- (0,0.55) (-0.42,1.0) -- (0.42,1.0) (0,0.55) -- (-0.32,0) (0,0.55) -- (0.32,0);
+  },
+}
+\begin{document}
+\begin{tikzpicture}
+\node[uc] (u0) at (0,0.0) {Quản lý phòng,\\thiết bị và khách thuê};
+\node[uc] (u1) at (0,-1.5) {Duyệt yêu cầu thuê,\\tạo hợp đồng thuê};
+\node[uc] (u2) at (0,-3.0) {Ghi chỉ số điện nước,\\xuất hoá đơn tháng};
+\node[uc] (u3) at (0,-4.5) {Kết thúc hợp đồng,\\quyết toán tiền cọc};
+\node[uc] (u4) at (0,-6.0) {Theo dõi tổng quan,\\công nợ, thu chi};
+\node[uc] (u5) at (0,-7.5) {Đăng nhập Google,\\liên kết ví MetaMask};
+\node[uc] (u6) at (0,-9.0) {Gia hạn hợp đồng};
+\node[uc] (u7) at (0,-10.5) {Rút tiền về MetaMask,\\xem lịch sử giao dịch};
+\node[uc] (u8) at (0,-12.0) {Tìm phòng,\\gửi yêu cầu thuê};
+\node[uc] (u9) at (0,-13.5) {Ký hợp đồng\\và đặt cọc};
+\node[uc] (u10) at (0,-15.0) {Trả tiền phòng,\\thanh toán hoá đơn};
+\node[uc] (u11) at (0,-16.5) {Chấm dứt sớm,\\nhận lại tiền cọc};
+\pic at (-6.2,-9.25) {actor};
+\node[font=\small,anchor=north] at (-6.2,-9.3) {Chủ nhà};
+\pic at (6.2,-9.25) {actor};
+\node[font=\small,anchor=north] at (6.2,-9.3) {Người thuê};
+\draw[arr] (-5.75,-8.25) -- (u0.west);
+\draw[arr] (-5.75,-8.25) -- (u1.west);
+\draw[arr] (-5.75,-8.25) -- (u2.west);
+\draw[arr] (-5.75,-8.25) -- (u3.west);
+\draw[arr] (-5.75,-8.25) -- (u4.west);
+\draw[arr] (-5.75,-8.25) -- (u5.west);
+\draw[arr] (5.75,-8.25) -- (u5.east);
+\draw[arr] (-5.75,-8.25) -- (u6.west);
+\draw[arr] (5.75,-8.25) -- (u6.east);
+\draw[arr] (-5.75,-8.25) -- (u7.west);
+\draw[arr] (5.75,-8.25) -- (u7.east);
+\draw[arr] (5.75,-8.25) -- (u8.east);
+\draw[arr] (5.75,-8.25) -- (u9.east);
+\draw[arr] (5.75,-8.25) -- (u10.east);
+\draw[arr] (5.75,-8.25) -- (u11.east);
+\end{tikzpicture}
+\end{document}
